@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Muggle</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://wallpapers.com/images/hd/parchment-paper-background-vrkkolsv6wuzovg0.jpg");
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            min-height: 100vh; 
+            position: relative;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+            padding-bottom: 60px;
+        }
+
+        .left-box, .right-box {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+            height: 250px; 
+            overflow: hidden;
+            margin-bottom: 20px; 
+        }
+
+        .left-box {
+            width: 35%; 
+        }
+
+        .right-box {
+            width: 55%; 
+            text-align: center;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            width: 100%;
+            bottom: 0;
+            position: absolute; 
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+        }
+
+        p {
+            text-align: justify;
+            font-size: large;
+            margin-bottom: 10px; 
+        }
+
+        .date {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>DAILY MUGGLE</header>
+
+    <div class="content">
+        <div class="left-box">
+            <video width="100%" controls autoplay muted loop>
+                <source src="andrej.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="right-box">
+            <h1> Andrej Karpathy Trains GPT-2 in Pure C</h1>
+            <p class="date">April 10, 2024</p>
+            <p>Andrej Karpathy, a prominent figure in the field of artificial intelligence, has made a noteworthy contribution with his recent project, llm.c. This project breaks away from the conventional methods of training large language models (LLMs) and offers a unique approach: training a GPT-2 model entirely in C, bypassing the popular deep learning framework, PyTorch. It's efficient and portable due to C's nature but it can be complex for larger models and lacks the functionality of established libraries.        </p>
+        </div>
+        <div class="right-box">
+            <h1>Meta launches Mind reading Wristband</h1>
+            <p class="date">March 15, 2024</p>
+            <p>At F8 2024 conference, Meta unveiled a mind-blowing prototype: a wristband translating brain signals into AR/VR controls. This BCI tech could revolutionize human-computer interaction. Imagine exploring VR worlds just by thinking! While in early stages, it holds immense potential for diverse fields, from entertainment to healthcare. Challenges like data security and ethics exist, but Meta's innovation marks a giant leap towards a future where our thoughts control the digital world.</p>
+        </div>
+        <div class="left-box">
+            <video width="100%" controls autoplay muted loop>
+                <source src="mark.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <footer>By Arpit Pathak</footer>
+</body>
+</html>
