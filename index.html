@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Muggle</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Muggle</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
             background-image: url("https://wallpapers.com/images/hd/parchment-paper-background-vrkkolsv6wuzovg0.jpg");
             font-family: Georgia, 'Times New Roman', Times, serif;
             min-height: 100vh; 
             position: relative;
-        }
+    }
 
-        header {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 24px;
-            font-weight: bold;
-        }
+    header {
+            background-color: rgba(201,189,165,255);
+            color: #4d2323;
+      text-align: center;
+      padding: 10px;
+            font-size: 50px;
+    font-weight: bold;
+    }
 
-        .content {
-            display: flex;
-            flex-wrap: wrap; 
-            justify-content: space-around;
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
             align-items: flex-start;
             padding: 20px;
             padding-bottom: 60px;
         }
 
-        .left-box, .right-box {
+    .left-box, .right-box {
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8); 
             border-radius: 10px;
@@ -40,10 +41,10 @@
             height: 250px; 
             overflow: hidden;
             margin-bottom: 20px; 
-        }
+    }
 
-        .left-box {
-            width: 35%; 
+    .left-box {
+      width: 35%; 
         }
 
         .right-box {
@@ -51,38 +52,42 @@
             text-align: center;
         }
 
-        footer {
+    footer {
             background-color: #000;
             color: #fff;
             text-align: center;
-            padding: 10px;
-            font-size: 14px;
+      padding: 10px;
+      font-size: 14px;
             width: 100%;
             bottom: 0;
             position: absolute; 
+    }
+    img{
+      height: 100%;
+      width: 100%;
+    }
+    video {
+      height: 100%;
+      align-items: center;
         }
-
-        video {
-            width: 100%;
-            height: 100%;
-        }
-
-        p {
+    p {
             text-align: justify;
             font-size: large;
-            margin-bottom: 10px; 
-        }
+      margin-bottom: 10px;
 
-        .date {
-            font-style: italic;
         }
-    </style>
+    .date {
+      font-style: italic;
+    }
+    .head{
+      float: right;
+    }
+  </style>
 </head>
 <body>
-    <header>DAILY MUGGLE</header>
-
+  <header>DAILY <img src="logo.jfif" style="width: 50px; height: 50px;"> MUGGLE</header>
     <div class="content">
-        <div class="left-box">
+        <div class="left-box"><!--1-->
             <video width="100%" controls autoplay muted loop>
                 <source src="andrej.mp4" type="video/mp4">
             </video>
@@ -92,7 +97,7 @@
             <p class="date">April 10, 2024</p>
             <p>Andrej Karpathy, a prominent figure in the field of artificial intelligence, has made a noteworthy contribution with his recent project, llm.c. This project breaks away from the conventional methods of training large language models (LLMs) and offers a unique approach: training a GPT-2 model entirely in C, bypassing the popular deep learning framework, PyTorch. It's efficient and portable due to C's nature but it can be complex for larger models and lacks the functionality of established libraries.        </p>
         </div>
-        <div class="right-box">
+        <div class="right-box"><!--2-->
             <h1>Meta launches Mind reading Wristband</h1>
             <p class="date">March 15, 2024</p>
             <p>At F8 2024 conference, Meta unveiled a mind-blowing prototype: a wristband translating brain signals into AR/VR controls. This BCI tech could revolutionize human-computer interaction. Imagine exploring VR worlds just by thinking! While in early stages, it holds immense potential for diverse fields, from entertainment to healthcare. Challenges like data security and ethics exist, but Meta's innovation marks a giant leap towards a future where our thoughts control the digital world.</p>
@@ -102,8 +107,84 @@
                 <source src="mark.mp4" type="video/mp4">
             </video>
         </div>
-    </div>
+        <div class="left-box"><!--3-->
+            <img src="elon giphy.gif" style="width: 100%;">
+        </div>
+        <div class="right-box">
+            <h1> Elon sets sights on India, ditching China</h1>
+            <p class="date">April 11, 2024</p>
+            <p>In a potential sign of shifting alliances, Tesla CEO Elon Musk is scheduled to meet with Indian Prime Minister Narendra Modi. This comes amidst growing tensions between Tesla and China, a key market for the electric vehicle (EV) giant. Analysts see this move as a strategic shift by Musk, with India's vast potential market and government push for EVs proving too attractive to ignore. Could India be the new battleground for Tesla's dominance in the EV race?</p> 
+        </div>
+        <div class="right-box"><!--.4.-->
+            <h1>Terminator for Cyberattacks, by Google</h1>
+            <p class="date">April 5, 2024</p>
+            <p>DeepMind has introduced AlphaWall, an AI system poised to revolutionize cybersecurity. AlphaWall analyzes network traffic at unprecedented speeds, employing machine learning to identify and thwart cyberattacks with exceptional accuracy. This continuous learning system adapts to evolving threats, offering a significant leap forward in defense capabilities. While ethical considerations remain, AlphaWall signifies a promising advancement in the fight against cybercrime.</p>
+          </div>
+        <div class="left-box">
+            <img src="ai2.gif" style="width: 100%; height: 100%;overflow: hidden;">
+        </div>
+        <div class="left-box"><!--5-->
+          <video width="100%" controls autoplay muted loop>
+            <source src="amazon.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="right-box">
+          <h1>Signs of Lost city found in Amazon</h1>
+          <p class="date">April 12, 2024</p>
+          <p>Whispers of a lost city, Zargon, echo through the Amazon. Satellite images reveal strange geometric shapes in the jungle, sparking social media frenzy. Legends of Zargon, a forgotten civilization, have captivated explorers for centuries.  The dense rainforest makes exploration difficult, but archaeologists and adventurers are eager to confirm the discovery. Responsible planning is crucial to protect the fragile ecosystem. Does Zargon exist? Only time, and a careful expedition, will tell.</p>
+        </div>
+      <div class="right-box"><!--.6.-->
+          <h1>Tensions Rise in the South China Sea</h1>
+          <p class="date">March 28, 2024</p>
+          <p>South China Sea has become a hotspot for geopolitical friction. China claims sovereignty over nearly the entire sea, a claim rejected by several Southeast Asian nations and the US. Military exercises, contested territorial claims, and resource disputes continue to fuel tensions in the region.
 
-    <footer>By Arpit Pathak</footer>
+            These tensions flared up again, raising concerns about a potential military confrontation. International community is urging all parties to exercise restraint and work towards peaceful resolution.</p>
+        </div>
+      <div class="left-box">
+        <video width=" 100%" controls autoplay muted loop>
+          <source src="china.mp4" type="video/mp4">
+      </video>
+      </div>
+      <div class="left-box"><!--7-->
+        <video width="100%" controls autoplay muted loop>
+          <source src="scott.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="right-box">
+        <h1>AI Whiz Kid, Devin Rocks Tech</h1>
+        <p class="date">March 13, 2024</p>
+      <p>Tech titans are sweating after yesterday's launch of Devin, an AI prodigy by Cognition Labs. Devin reportedly writes code, solves problems, and innovates - all at lightning speed. While some predict a golden age of tech, others fear a "job apocalypse" for programmers. Cognition Labs stays mum on details, amplifying anxieties. Is Devin a revolutionary tool or an existential threat? The future seems both exciting and uncertain.</p>
+          </div>
+    <div class="right-box"><!--.8.-->
+        <h1>Former Google VP Joins Amazon</h1>
+        <p class="date">April 12, 2024</p>
+        <p>The world of artificial intelligence is abuzz with a major power shift. Andrew Ng, a highly respected figure in AI and a former Vice President at Google, has just been appointed to Amazon's board of directors. This strategic move brings Ng's deep knowledge and experience to Amazon, potentially changing the game for the retail giant's AI adoption across its sprawling operations. Ng's expertise will be invaluable as Amazon strives to stay at the forefront of the ever-evolving AI landscape.</p>
+      </div>
+    <div class="left-box">
+      <video width=" 100%" controls autoplay muted loop>
+        <source src="ng.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="left-box"><!--9-->
+      <img src="quantum.gif" width="100%">
+  </div>
+  <div class="right-box">
+      <h1> US vs China in Quantum supremacy</h1>
+      <p class="date">March, 2024</p>
+      <p>The US clings to its lead in the quantum computing race with IBM's powerful machines. But China's Wukong, with a different approach, is hot on their heels. This fierce competition will unlock revolutionary breakthroughs in science, impacting everything from medicine to national security. The first nation to achieve quantum supremacy wins global dominance.</p>
+        </div>
+  <div class="right-box"><!--.6.-->
+      <h1>Hackers Target YouTube Gamers</h1>
+      <p class="date">April 4, 2024</p>
+      <p>Popular YouTube channels are no longer just entertainment hubs – they've become battlegrounds for cybercriminals. Proofpoint researchers warn that hackers are hijacking these accounts, particularly those focused on gaming, to distribute malware disguised as free software or game upgrades. These malicious downloads aim to steal your login credentials and financial information. Be cautious before clicking links or downloading files, even from seemingly trusted channels.</p>
+    </div>
+    <div class="left-box">
+      <img src="anon.gif" width="100%">
+    </div>
+    </div>
+    <footer>By Arpit Pathak
+      <br>
+      <a>Send me an owl at: thepathakarpit@gmail.com</a>
+    </footer>
 </body>
 </html>
